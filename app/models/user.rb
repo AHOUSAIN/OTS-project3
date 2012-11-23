@@ -1,5 +1,7 @@
 class User < ActiveRecord::Base
   attr_accessible :account_name, :account_number, :email, :mobile_number, :name,:password, :password_confirmation ,:password_hash, :password_digest , :password_salt
+  
+  before_save :encrypt_password
   has_secure_password
     validates_confirmation_of :password
     validates_presence_of :password, :on => :create
