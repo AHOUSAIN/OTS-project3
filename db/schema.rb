@@ -19,12 +19,12 @@ ActiveRecord::Schema.define(:version => 20121123224039) do
     t.string   "account_number"
     t.string   "account_name"
     t.string   "email"
-    t.string   "password_hash"
     t.string   "password_salt"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
     t.string   "password_digest"
     t.boolean  "admin"
+    t.string   "password_hash"
   end
 
 end
