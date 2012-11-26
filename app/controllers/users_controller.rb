@@ -2,10 +2,12 @@ class UsersController < ApplicationController
 before_filter :admin,   :only => :destroy
   
   def index
-    @users = User.alphabetical
+    @title = "Users"
+    @users = User.all
   end
   
   def new
+      @title = "Sign in"
       @user = User.new
     end
     def show
@@ -26,14 +28,14 @@ before_filter :admin,   :only => :destroy
     end
     
     def edit
-      #@title = "Edit user"
+      @title = "Edit"
     end
 
     def update
       if @user.update_attributes(params[:user])
         redirect_to @user, :flash => { :success => "Profile updated." }
       else
-        #@title = "Edit user"
+        @title = "Edit user"
         render 'edit'
       end
     end

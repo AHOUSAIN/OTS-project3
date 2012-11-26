@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>OTS</title>
+  <title><%= title %></title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<div id="user_nav">
-  <% if current_user %>
-    Logged in as <%= current_user.email %>
-    <%= link_to "Log out", log_out_path %>
-  <% else %>
-    <%= link_to "Sign up", sign_up_path %> or 
-    <%= link_to "Log in", log_in_path %>
-  <% end %>
-</div>
-<body>
-	<% flash.each do |name, msg| %>
-	    <%= content_tag :div, msg, :id => "flash#{name}" %>
-	  <% end %>
-<%= yield %>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span2">
+      	<%= render 'partials/side' %> 
+    </div>
+    <div class="span10">
+      	
+        <body>
+			<% flash.each do |name, msg| %>
+			    <%= content_tag :div, msg, :id => "flash#{name}" %>
+			  <% end %>
+		<%= yield %>
 
-</body>
+		</body>
+
+
+    </div>
+
+  </div>
+</div>
+<footer>
+<center><%= render 'partials/footer' %> </center> <br />
+	<center>Webmaster Information: AFRAH HASSAN :: NAWAL BEHIH :: OLA DAHER
+			&nbsp;&nbsp;&copy 2012</center>
+	</footer>
 </html>
+

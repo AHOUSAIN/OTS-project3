@@ -1,15 +1,13 @@
 OTS::Application.routes.draw do
-  get "pages/home"
-
-  get "pages/about"
-
-  get "pages/contact"
+  match 'home' => "pages#home"
+  match 'about' => "pages#about"
+  match 'contact' => "pages#contact"
 
     get "log_in" => "sessions#new", :as => "log_in"
     get "log_out" => "sessions#destroy", :as => "log_out"
 
     get "sign_up" => "users#new", :as => "sign_up"
-    root :to => "users#new"
+    root :to => 'pages#home'
     resources :users
     resources :sessions, only: [:new, :create, :destroy]
   # The priority is based upon order of creation:
