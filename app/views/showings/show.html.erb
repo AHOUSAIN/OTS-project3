@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Type:</b>
+  <%= @showing.time %>
+</p>
+<p>
+  <b>Type:</b>
+  <%= @showing.type %>
+</p>
+
+<p>
+  <b>Movie:</b>
+  <%= @showing.movie_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_showing_path(@showing) %> |
+<%= link_to 'Back', showings_path %>

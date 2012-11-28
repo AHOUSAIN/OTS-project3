@@ -1,4 +1,4 @@
-Feature:movie
+Feature: Movie
 In order to track my clients
 As a owner of website
 I want to be able to list, create, update, and delete movie information

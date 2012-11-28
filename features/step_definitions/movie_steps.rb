@@ -1,6 +1,6 @@
 Given /^an initial business$/ do
   @thering = FactoryGirl.create(:movie)
-  @thenotebook = FactoryGirl.create(:movie, :name => "The Note book", :genre => "Romance", :duration => "30", :rating => 4, :language => "English")
+  @movieshow = FactoryGirl.create(:showing)
 end
 
 Given /^I am on the 'movies' page$/ do
@@ -47,8 +47,8 @@ When /^I follow the "(.*?)" link for "(.*?)"$/ do |link, cell_value|
     end
 end
 
-When /^I change the name "(.*?)" to "(.*?)"$/ do |old, new|
-  fill_in "Name", :with => new
+When /^I change the name "(.*?)" to "(.*?)"$/ do |oldname, newname|
+  fill_in "Name", :with => newname
 end
 
 Then /^I should not to see "(.*?)"$/ do |value|
