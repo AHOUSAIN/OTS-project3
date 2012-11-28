@@ -9,21 +9,13 @@ Given an initial business
 
 Scenario: List Movie
 Given I am on the 'movies' page
-Then in the "body", I should see "Listing movies"
+Then in the "body", I should see "Movies"
 And in the "th", I should see "Name" 
 And in the "th", I should see "Genre" 
-And in the "th", I should see "Duration" 
 And in the "th", I should see "Rating" 
-And in the "th", I should see "Language" 
-And in the "th", I should see "Cast"
-And in the "th", I should see "Description"
 And in the "td", I should see "The Ring"
 And in the "td", I should see "Horror"
-And in the "td", I should see "130"
 And in the "td", I should see "3"
-And in the "td", I should see "English"
-And in the "td", I should see "This is a note"
-And in the "td", I should see "This is a note"
 And in the "body", I should see a link to "New Movie"
  
  
