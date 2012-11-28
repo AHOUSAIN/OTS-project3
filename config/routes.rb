@@ -1,16 +1,6 @@
-OTS::Application.routes.draw do
-  
-    get "log_in" => "sessions#new", :as => "log_in"
-    get "log_out" => "sessions#destroy", :as => "log_out"
-    get "sign_up" => "users#new", :as => "sign_up"
-    
-    match 'home' => "pages#home"
-    match 'about' => "pages#about"
-    match 'contact' => "pages#contact"
-    
-    root :to => 'pages#home'
-    resources :users
-    resources :sessions, only: [:new, :create, :destroy]
+OTPS::Application.routes.draw do
+  resources :movies
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -60,7 +50,7 @@ OTS::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+ root :to => 'movies#index'
 
   # See how all your routes lay out with "rake routes"
 

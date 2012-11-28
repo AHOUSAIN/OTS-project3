@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-OTS::Application.load_tasks
+OTPS::Application.load_tasks
