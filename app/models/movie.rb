@@ -1,6 +1,7 @@
 class Movie < ActiveRecord::Base
   attr_accessible :cast, :description, :duration, :genre, :language, :name, :rating, :photo
   mount_uploader :photo, PhotoUploader
+  has_many :showings
   
   
   validates :cast, :description, :duration, :genre, :language, :name, :rating, :presence => true
