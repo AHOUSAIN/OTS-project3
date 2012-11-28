@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 OTS::Application.configure do
+=======
+OTPS::Application.configure do
+>>>>>>> 08483deb6021caaf7354953db0e04bd5a6088e77
   # Settings specified here will take precedence over those in config/application.rb
 
   # In the development environment your application's code is reloaded on
