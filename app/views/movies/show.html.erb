@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @movie.name %>
+</p>
+
+<p>
+  <b>Genre:</b>
+  <%= @movie.genre %>
+</p>
+
+<p>
+  <b>Duration:</b>
+  <%= @movie.duration %>
+</p>
+
+<p>
+  <b>Rating:</b>
+  <%= @movie.rating %>
+</p>
+
+<p>
+  <b>Language:</b>
+  <%= @movie.language %>
+</p>
+
+<p>
+  <b>Cast:</b>
+  <%= @movie.cast %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @movie.description %>
+</p>
+
+  <p><%= image_tag @movie.photo_url %></p>
+
+<%= link_to 'Edit', edit_movie_path(@movie) %> |
+<%= link_to 'Back', movies_path %>
