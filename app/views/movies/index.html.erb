@@ -1,14 +1,10 @@
-<h1>Listing movies</h1>
+<h1>Movies</h1>
 
-<table>
+<table id="List", class="table table-hover">
   <tr>
     <th>Name</th>
     <th>Genre</th>
-    <th>Duration</th>
     <th>Rating</th>
-    <th>Language</th>
-    <th>Cast</th>
-    <th>Description</th>
     <th></th>
     <th></th>
     <th></th>
@@ -18,11 +14,8 @@
   <tr>
     <td><%= movie.name %></td>
     <td><%= movie.genre %></td>
-    <td><%= movie.duration %></td>
     <td><%= movie.rating %></td>
-    <td><%= movie.language %></td>
-    <td><%= movie.cast %></td>
-    <td><%= movie.description %></td>
+
     <td><%= link_to 'Show', movie %></td>
     <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
     <td><%= link_to 'Destroy', movie, method: :delete, data: { confirm: 'Are you sure?' } %></td>

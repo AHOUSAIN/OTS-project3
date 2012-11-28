@@ -11,20 +11,6 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(:version => 20121126092429) do
-
-  create_table "users", :force => true do |t|
-    t.string   "name"
-    t.string   "mobile_number"
-    t.string   "account_name"
-    t.string   "account_number"
-    t.string   "email"
-    t.string   "password_digest"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
-    t.boolean  "admin"
-=======
 ActiveRecord::Schema.define(:version => 20121126124843) do
 
   create_table "movies", :force => true do |t|
@@ -38,7 +24,18 @@ ActiveRecord::Schema.define(:version => 20121126124843) do
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
     t.string   "photo"
->>>>>>> 08483deb6021caaf7354953db0e04bd5a6088e77
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "name"
+    t.string   "mobile_number"
+    t.string   "account_name"
+    t.string   "account_number"
+    t.string   "email"
+    t.string   "password_digest"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+    t.boolean  "admin"
   end
 
 end
