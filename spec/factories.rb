@@ -1,4 +1,5 @@
 FactoryGirl.define do
+t = Time.now
 
   
   factory :user do
@@ -21,6 +22,14 @@ end
                 language "English"
                 cast "This is a note"
                 description "This is a note"
+        end
+        
+        
+        factory :showing do
+          type "3D"
+          time  t
+          movie_id 1
+          association :movie
         end
 
 end
