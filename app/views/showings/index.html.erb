@@ -5,7 +5,7 @@
     <th>Time</th>
     <th>Type</th>
     <th>Movei_id</th>
-    <th></th>
+    <th>Purchase</th>
     <th></th>
     <th></th>
   </tr>
@@ -20,10 +20,11 @@
     <td><%= link_to 'Show', showing %></td>
     <td><%= link_to 'Edit', edit_showing_path(showing) %></td>
     <td><%= link_to 'Destroy', showing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Purchase', ticket_path %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Showing', new_showing_path %>
+<%= link_to 'Please note that once you click purchase you will buy tickets immediately using you current account', '#' %>

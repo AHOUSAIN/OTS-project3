@@ -1,7 +1,7 @@
 
 OTS::Application.routes.draw do
   
-  get "pages/ticket"
+ 
 
   resources :showings
 
@@ -12,6 +12,7 @@ OTS::Application.routes.draw do
     match 'home' => "pages#home"
     match 'about' => "pages#about"
     match 'contact' => "pages#contact"
+    match 'ticket' => "pages#ticket"
     
     root :to => 'pages#home'
     
