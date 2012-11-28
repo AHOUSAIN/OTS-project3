@@ -1,7 +1,11 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
+<<<<<<< HEAD
 gem "bcrypt-ruby"
+=======
+
+>>>>>>> 08483deb6021caaf7354953db0e04bd5a6088e77
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -13,10 +17,18 @@ group :assets do
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
+<<<<<<< HEAD
 
   gem 'uglifier', '>= 1.0.3'
 end
 
+=======
+gem 'validates_timeliness', '~> 3.0'
+
+  gem 'uglifier', '>= 1.0.3'
+end
+gem 'carrierwave'
+>>>>>>> 08483deb6021caaf7354953db0e04bd5a6088e77
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
