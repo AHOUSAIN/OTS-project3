@@ -4,5 +4,13 @@
 
 require File.expand_path('../config/application', __FILE__)
 
+<<<<<<< HEAD
 
 OTS::Application.load_tasks
+=======
+<<<<<<< HEAD
+OTS::Application.load_tasks
+=======
+OTPS::Application.load_tasks
+>>>>>>> 08483deb6021caaf7354953db0e04bd5a6088e77
+>>>>>>> 6b622f47cdff519ea5c3b963930c258727fcc30f

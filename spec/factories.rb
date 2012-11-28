@@ -1,5 +1,9 @@
 FactoryGirl.define do
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+>>>>>>> 6b622f47cdff519ea5c3b963930c258727fcc30f
   
   factory :user do
     
@@ -12,7 +16,11 @@ FactoryGirl.define do
     password_confirmation "foobar"
     
 end
+<<<<<<< HEAD
 
+=======
+=======
+>>>>>>> 6b622f47cdff519ea5c3b963930c258727fcc30f
         factory :movie do
                 name "The Ring"
                 genre "Horror"
@@ -22,5 +30,9 @@ end
                 cast "This is a note"
                 description "This is a note"
         end
+<<<<<<< HEAD
 
+=======
+>>>>>>> 08483deb6021caaf7354953db0e04bd5a6088e77
+>>>>>>> 6b622f47cdff519ea5c3b963930c258727fcc30f
 end

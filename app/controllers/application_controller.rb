@@ -1,5 +1,9 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6b622f47cdff519ea5c3b963930c258727fcc30f
   force_ssl
   
 
@@ -8,5 +12,10 @@ class ApplicationController < ActionController::Base
   end
   
   helper_method :current_user
+<<<<<<< HEAD
 
+=======
+=======
+>>>>>>> 08483deb6021caaf7354953db0e04bd5a6088e77
+>>>>>>> 6b622f47cdff519ea5c3b963930c258727fcc30f
 end

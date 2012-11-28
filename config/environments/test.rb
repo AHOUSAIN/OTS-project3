@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 
 OTS::Application.configure do
 
+=======
+<<<<<<< HEAD
+OTS::Application.configure do
+=======
+OTPS::Application.configure do
+>>>>>>> 08483deb6021caaf7354953db0e04bd5a6088e77
+>>>>>>> 6b622f47cdff519ea5c3b963930c258727fcc30f
   # Settings specified here will take precedence over those in config/application.rb
 
   # The test environment is used exclusively to run your application's

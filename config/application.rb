@@ -1,6 +1,10 @@
 require File.expand_path('../boot', __FILE__)
 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+>>>>>>> 6b622f47cdff519ea5c3b963930c258727fcc30f
 # Pick the frameworks you want:
 require "active_record/railtie"
 require "action_controller/railtie"
@@ -8,9 +12,15 @@ require "action_mailer/railtie"
 require "active_resource/railtie"
 require "sprockets/railtie"
 # require "rails/test_unit/railtie"
+<<<<<<< HEAD
 
 require 'rails/all'
 
+=======
+=======
+require 'rails/all'
+>>>>>>> 08483deb6021caaf7354953db0e04bd5a6088e77
+>>>>>>> 6b622f47cdff519ea5c3b963930c258727fcc30f
 
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
@@ -19,9 +29,17 @@ if defined?(Bundler)
   # Bundler.require(:default, :assets, Rails.env)
 end
 
+<<<<<<< HEAD
 
 module OTS
 
+=======
+<<<<<<< HEAD
+module OTS
+=======
+module OTPS
+>>>>>>> 08483deb6021caaf7354953db0e04bd5a6088e77
+>>>>>>> 6b622f47cdff519ea5c3b963930c258727fcc30f
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
