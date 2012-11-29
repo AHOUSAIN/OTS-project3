@@ -27,8 +27,8 @@ describe MoviesController do
     {
             :name=> "The Ring",
             :genre=> "Horror",
-            :duration=> "30",
-            :rating =>"3",
+            :duration=> 30,
+            :rating =>3,
             :language=> "English",
             :cast =>"This is a note",
             :description =>"This is a note"

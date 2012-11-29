@@ -6,7 +6,9 @@
   <li class="nav-header">Options</li>
   
   <% if current_user %>
-    <%= link_to "Log out", log_out_path %>
+    
+	<li class="active"><%= link_to "Log out", log_out_path %></li>
+	  <li class="active"><%= link_to "Movies", movies_path %></li>
   <% else %>
    <li class="active"><%= link_to "Sign up", sign_up_path %></li>
   <li class="active"><%= link_to "Log In", log_in_path %></li>

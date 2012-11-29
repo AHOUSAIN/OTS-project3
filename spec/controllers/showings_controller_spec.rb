@@ -25,9 +25,9 @@ describe ShowingsController do
   # update the return value of this method accordingly.
   def valid_attributes
     {
-      :type => "3D"
-      , :movie_id =>1
-      , :time => Time.now
+      :type => "3D",
+      :movie_id => 1,
+       :time => Time.now
       
       
     }

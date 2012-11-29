@@ -13,7 +13,7 @@ describe "showings/new" do
 
     # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "form", :action => showings_path, :method => "post" do
-      assert_select "input#showing_type", :name => "showing[type]"
+      assert_select "select#showing_type", :name => "showing[type]"
       assert_select "input#showing_movie_id", :name => "showing[movie_id]"
     end
   end

@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
 before_filter :admin,   :only => :destroy
+
   
   def index
     @title = "Users"
@@ -16,7 +17,8 @@ before_filter :admin,   :only => :destroy
     def create
       @user = User.new(params[:user])
       if @user.save
-        redirect_to root_url, :flash => { :success => "Signed up!" }
+        session[:user_id] = @user.id
+        redirect_to movies_path, :flash => { :success => "Signed up!" }
       else
         render "new"
       end
