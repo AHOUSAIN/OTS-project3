@@ -18,14 +18,14 @@ Scenario: List Showings
 			Given I am on the 'new ' page
 			When I select "3D" for "Type"
 			And I select "02" for "Time"
-			And I select "02" for "Movie"
+			And I select "The Ring" for "Movie"
 			And I click "Create Showing"
 			Then I should see "Showing was successfully created."
 
 Scenario: Update Showing
 	    Given I am on the 'Showings' page
 		When I follow the "Edit" link for "3D"
-		And I change the type "1" to "2"
+		And I change the type "3D" to "VIP"
 		And I click "Update"
 		Then I should see "Showing was successfully updated"
 	

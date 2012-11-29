@@ -31,14 +31,14 @@ And in the "body", I should see a link to "New Movie"
  And I click "Create Movie"
  Then I should see "Movie was successfully created."
 
-Scenario: Update Owner
+Scenario: Update Movie
       Given I am on the 'movies' page
       When I follow the "Edit" link for "The Ring"
       And I change the name "The Ring" to "The only Ring"
       And I click "Update Movie"
       Then I should see "Movie was successfully updated."
 
-   Scenario: Delete Owner 
+   Scenario: Delete Movie 
        Given I am on the 'movies' page
        When I follow the "Destroy" link for "The Ring"
        Then I should not to see "The Ring"
